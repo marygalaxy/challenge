@@ -21,9 +21,7 @@ Application should be running and you should be able to load it using your brows
 $ npx playwright test --project=chromium --workers=1
 ```
 
-This command run playwright tests in chromium browser in sequential mode.
-I do this because currently application crashing on login with invalid credentials test.
-If we add error handling to application it will stop crashing on this error and we can run playwright tests in all browsers in parallel mode using default command: 
+This command runs Playwright tests in browser Chrome in sequential mode. I do this because the application is currently crashing during the ‘login with invalid credentials’ test. If we add error handling to the application, it will stop crashing due to this error, and we will be able to run Playwright tests in all browsers in parallel mode using the default command:
 
 ```
 $ npx playwright test
